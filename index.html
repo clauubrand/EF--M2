@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Coffee </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#"> /CODE_COFFEE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menú</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-outline-dark ms-lg-3" href="#reserva">Reservar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="hero">
+        <div class="hero-card mx-3" id="hero-content">
+            <h1 class="display-3">Sobre el Viaje</h1>
+            <p class="lead italic">"Busca ese momento perfecto, en donde solo un café importa."</p>
+            <hr class="my-4" style="border-color: white;">
+            <p>Disfruta cada gota de nuestra esencia natural.</p>
+            <a href="#menu" class="btn btn-light btn-lg">Explorar Menú</a>
+        </div>
+    </header>
+
+    <section id="nosotros" class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="assets/img/nosotros.jpg" class="img-fluid rounded-4 shadow" alt="Cafetería">
+            </div>
+            <div class="col-md-6 p-5">
+                <h2 class="mb-4">Nuestra Filosofía</h2>
+                <p>Nacimos del deseo de conectar la tranquilidad de la naturaleza con el aroma del café recién tostado.
+                    En /Code_Coffee,
+                    cada momento cuenta una historia y cada taza es una pausa en tu viaje diario.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="bg-light py-5">
+        <div class="container text-center mb-5">
+            <h2>Favoritos de la Casa</h2>
+            <div class="row mt-4">
+                <div class="col-md-4 mb-4">
+                    <div class="card menu-card h-100">
+                        <img src="assets/img/latte.jpg" class="card-img-top" alt="Latte">
+                        <div class="card-body">
+                            <h5 class="card-title">Java Latte</h5>
+                            <p class="card-text text-muted">Café espresso con leche infusionada en cacao.</p>
+                            <p class="fw-bold">$3.500</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card menu-card h-100">
+                        <img src="assets/img/avocado toast.jpg" class="card-img-top" alt="Tostada">
+                        <div class="card-body">
+                            <h5 class="card-title">Avocado Toast</h5>
+                            <p class="card-text text-muted">Pan de masa madre, aguacate y semillas orgánicas.</p>
+                            <p class="fw-bold">$3.500</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card menu-card h-100">
+                        <img src="assets/img/coldbrew.jpg" class="card-img-top" alt="Espresso">
+                        <div class="card-body">
+                            <h5 class="card-title">Cold Brew</h5>
+                            <p class="card-text text-muted">Extracción en frío durante 18 horas.</p>
+                            <p class="fw-bold">$2.000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="py-5 container">
+        <h2 class="text-center mb-5">Nuestro Espacio</h2>
+        <div id="cafeCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner rounded-5">
+                <div class="carousel-item active">
+                    <img src="assets/img/c1.jpg" class="d-block w-100" alt="Ambiente">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/c2.jpg" class="d-block w-100" alt="Barista">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#cafeCarousel" data-bs-slide=""="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#cafeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <section id="reserva" class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 shadow-lg p-5 rounded-4 bg-white">
+                <h2 class="text-center mb-4">Haz una Reserva</h2>
+                <form id="reservaForm">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Nombre</label>
+                            <input type="text" id="nombref" class="form-control" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" id="correof" class="form-control" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Fecha</label>
+                            <input type="date" id="mensajef" class="form-control" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label class="form-label">Personas</label>
+                            <select class="form-select">
+                                <option value="1">1 Persona</option>
+                                <option value="2">2 Personas</option>
+                                <option value="4">4 Personas</option>
+                                <option value="6">Más de 5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" id="enviar_formulario" class="btn btn-custom w-100">Solicitar
+                            Mesa</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Visítanos</h5>
+                    <p>Calle Falsa 123, Concepción. </p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Horarios</h5>
+                    <p>Lunes - Domingo: 8:00 AM - 9:00 PM</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p>+123 456 789 | Code_coffee@contacto.com</p>
+                </div>
+            </div>
+            <hr>
+            <p class="mb-0">&copy; 2026 /CODE_COFFEE </p>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
