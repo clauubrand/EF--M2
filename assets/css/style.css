@@ -17,11 +17,20 @@
             backdrop-filter: blur(10px);
             border-bottom: 1px solid rgba(0,0,0,0.05);
         }
-
-
+        .logo-nav {
+            max-height: 80px;
+            width: auto;
+            transition: transform 0.3s ease;
+        }
+        
+        @media (max-width: 768px) {
+            .logo-nav {
+                max-height: 60px;
+            }
+        }
         .hero {
             height: 100vh;
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0, 0, 0, 0.3)),url('../img/hero.jpg');
+            background: linear-gradient(rgba(0,0,0,0.1), rgba(0, 0, 0, 0.1)), url('../img/code-coffee-hero-1920x1080.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -31,20 +40,20 @@
             text-align: center;
             color: white;
         }
-
+        
         .hero-card {
             background: var(--glass-bg);
-            backdrop-filter: blur(15px);
+            backdrop-filter: blur(25px);
             padding: 3rem;
             border-radius: 20px;
             border: 1px solid rgba(255,255,255,0.3);
             max-width: 600px;
             z-index: 2;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         }
-
+        
         h1, h2 { font-family: 'Playfair Display', serif; }
 
-        /* Cards del Menú */
         .menu-card {
             border: none;
             border-radius: 15px;
